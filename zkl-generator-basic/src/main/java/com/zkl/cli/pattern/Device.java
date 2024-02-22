@@ -1,4 +1,4 @@
-package com.zkl.zklgeneratorbasic.cli.pattern;
+package com.zkl.cli.pattern;
 
 public class Device {
     private String name;

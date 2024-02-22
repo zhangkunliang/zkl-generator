@@ -1,6 +1,7 @@
-package com.zkl.zklgeneratorbasic.model;
+package com.zkl.model;
 
 import lombok.Data;
+
 /**
  * 动态模版配置
  */

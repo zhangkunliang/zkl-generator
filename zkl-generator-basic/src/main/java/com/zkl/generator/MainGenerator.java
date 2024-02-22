@@ -1,6 +1,6 @@
-package com.zkl.zklgeneratorbasic.generator;
+package com.zkl.generator;
 
-import com.zkl.zklgeneratorbasic.model.MainTemplateConfig;
+import com.zkl.model.MainTemplateConfig;
 import freemarker.template.TemplateException;
 
 import java.io.File;

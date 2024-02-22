@@ -1,4 +1,4 @@
-package com.zkl.zklgeneratorbasic.cli.example;
+package com.zkl.cli.example;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;

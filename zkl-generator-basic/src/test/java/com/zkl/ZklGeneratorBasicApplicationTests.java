@@ -1,4 +1,4 @@
-package com.zkl.zklgeneratorbasic;
+package com.zkl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

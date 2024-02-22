@@ -1,4 +1,4 @@
-package com.zkl.zklgeneratorbasic.cli.pattern;
+package com.zkl.cli.pattern;
 
 public interface Command {
     void execute();
