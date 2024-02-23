@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zkl</groupId>
-    <artifactId>zkl-generator-maker</artifactId>
+    <artifactId>zkl-generator-basic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zkl-generator-maker</name>
+    <name>zkl-generator-basic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>
@@ -77,7 +77,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.zkl.maker.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
+                            <mainClass>com.zkl.Main</mainClass> <!-- 替换为你的主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>

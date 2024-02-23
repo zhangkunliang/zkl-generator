@@ -1,13 +1,17 @@
 package com.zkl.maker;
 
-import com.zkl.maker.cli.CommandExecutor;
+import com.zkl.maker.generator.main.GenerateTemplate;
+import com.zkl.maker.generator.main.MainGenerator;
+import com.zkl.maker.generator.main.ZipGenerator;
+import freemarker.template.TemplateException;
+
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-//        args = new String[]{"generate", "-l", "-a", "-o"};
-//        args = new String[]{"config"};
-//        args = new String[]{"list"};
-        CommandExecutor commandExecutor = new CommandExecutor();
-        commandExecutor.doExecute(args);
+
+    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
+//        GenerateTemplate generateTemplate = new MainGenerator();
+        GenerateTemplate generateTemplate = new ZipGenerator();
+        generateTemplate.doGenerate();
     }
 }

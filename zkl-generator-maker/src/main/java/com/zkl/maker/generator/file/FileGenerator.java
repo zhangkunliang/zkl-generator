@@ -1,6 +1,5 @@
 package com.zkl.maker.generator.file;
 
-import com.zkl.maker.model.DataMoel;
 import freemarker.template.TemplateException;
 
 import java.io.File;
@@ -28,16 +27,8 @@ public class FileGenerator {
         // 生成静态文件
         StaticFileGenerator.copyFilesByHutool(inputPath, outputPath);
         // 生成动态文件
-        String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/MainTemplate.java.ftl";
+        String inputDynamicFilePath = projectPath + File.separator + "src/main/resources/templates/DataModel.java.ftl.ftl";
         String outputDynamicFilePath = outputPath + File.separator + "acm-template/src/com/zkl/acm/MainTemplate.java";
         DynamicFileGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
-    }
-
-    public static void main(String[] args) throws TemplateException, IOException {
-        DataMoel dataMoel = new DataMoel();
-        dataMoel.setAuthor("zkl");
-        dataMoel.setLoop(false);
-        dataMoel.setOutputText("求和结果：");
-        doGenerate(dataMoel);
     }
 }
