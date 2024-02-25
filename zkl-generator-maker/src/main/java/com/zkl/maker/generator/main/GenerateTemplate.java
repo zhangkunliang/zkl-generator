@@ -74,7 +74,7 @@ public abstract class GenerateTemplate {
      * @throws IOException
      * @throws TemplateException
      */
-    protected void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
+    protected void generateCode(Meta meta, String outputPath) throws IOException, TemplateException, InterruptedException {
         // 读取 resources 目录
         String inputResourcePath = "";
 
@@ -140,6 +140,14 @@ public abstract class GenerateTemplate {
         inputFilePath = inputResourcePath + File.separator + "templates/pom.xml.ftl";
         outputFilePath = outputPath + File.separator + "pom.xml";
         DynamicFileGenerator.doGenerate(inputFilePath , outputFilePath, meta);
+        // 构建 jar 包
+        JarGenerator.doGenerate(outputPath);
+
+        // 封装脚本
+        String shellOutputFilePath = outputPath + File.separator + "generator";
+        String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
+        String jarPath = "target/" + jarName;
+        ScriptGenerator.doGenerate(shellOutputFilePath, jarPath);
     }
 
     /**
