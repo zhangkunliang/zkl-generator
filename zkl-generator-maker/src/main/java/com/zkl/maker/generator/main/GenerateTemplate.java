@@ -4,10 +4,10 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.resource.ClassPathResource;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.ZipUtil;
+
 import com.zkl.maker.generator.JarGenerator;
 import com.zkl.maker.generator.ScriptGenerator;
 import com.zkl.maker.generator.file.DynamicFileGenerator;
-import com.zkl.maker.generator.file.StaticFileGenerator;
 import com.zkl.maker.meta.Meta;
 import com.zkl.maker.meta.MetaManager;
 import freemarker.template.TemplateException;
