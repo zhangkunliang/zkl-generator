@@ -109,11 +109,6 @@ public class UserController {
             WxMpService wxService = wxOpenConfig.getWxMpService();
             accessToken = wxService.getOAuth2Service().getAccessToken(code);
             WxOAuth2UserInfo userInfo = wxService.getOAuth2Service().getUserInfo(accessToken, code);
-            String unionId = userInfo.getUnionId();
-            String mpOpenId = userInfo.getOpenid();
-            if (StringUtils.isAnyBlank(unionId, mpOpenId)) {
-                throw new BusinessException(ErrorCode.SYSTEM_ERROR, "登录失败，系统错误");
-            }
             return ResultUtils.success(userService.userLoginByMpOpen(userInfo, request));
         } catch (Exception e) {
             log.error("userLoginByWxOpen error", e);
