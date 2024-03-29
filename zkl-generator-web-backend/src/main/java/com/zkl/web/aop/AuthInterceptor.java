@@ -21,7 +21,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
  * 权限校验 AOP
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  */
 @Aspect
 @Component

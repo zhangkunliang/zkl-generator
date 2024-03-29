@@ -1,14 +1,15 @@
 package com.zkl.web.model.vo;
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
  * 已登录用户视图（脱敏）
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  **/
 @Data
 public class LoginUserVO implements Serializable {

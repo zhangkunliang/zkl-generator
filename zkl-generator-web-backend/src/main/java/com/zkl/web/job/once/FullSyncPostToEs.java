@@ -2,7 +2,6 @@ package com.zkl.web.job.once;
 
 import com.zkl.web.esdao.PostEsDao;
 import com.zkl.web.model.dto.post.PostEsDTO;
-import com.zkl.web.model.entity.Post;
 import com.zkl.web.service.PostService;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,7 +14,7 @@ import org.springframework.boot.CommandLineRunner;
  * 全量同步帖子到 es
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  */
 // todo 取消注释开启任务
 //@Component

@@ -1,9 +1,8 @@
 package com.zkl.web.job.cycle;
 
 import com.zkl.web.esdao.PostEsDao;
-import com.zkl.web.mapper.PostMapper;
 import com.zkl.web.model.dto.post.PostEsDTO;
-import com.zkl.web.model.entity.Post;
+
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -16,7 +15,7 @@ import org.springframework.scheduling.annotation.Scheduled;
  * 增量同步帖子到 es
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  */
 // todo 取消注释开启任务
 //@Component

@@ -4,7 +4,7 @@ package com.zkl.web.wxmp;
  * 微信公众号相关常量
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  **/
 public class WxMpConstant {
 

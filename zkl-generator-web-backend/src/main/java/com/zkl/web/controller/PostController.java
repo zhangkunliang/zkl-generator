@@ -14,9 +14,7 @@ import com.zkl.web.model.dto.post.PostAddRequest;
 import com.zkl.web.model.dto.post.PostEditRequest;
 import com.zkl.web.model.dto.post.PostQueryRequest;
 import com.zkl.web.model.dto.post.PostUpdateRequest;
-import com.zkl.web.model.entity.Post;
 import com.zkl.web.model.entity.User;
-import com.zkl.web.model.vo.PostVO;
 import com.zkl.web.service.PostService;
 import com.zkl.web.service.UserService;
 import java.util.List;
@@ -34,7 +32,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 帖子接口
  *
  * @author <a href="https://github.com/zhangkunliang"></a>
- * @from <a href="https://zkl.icu">编程导航知识星球</a>
+ * 
  */
 @RestController
 @RequestMapping("/post")
