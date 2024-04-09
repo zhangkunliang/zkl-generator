@@ -72,7 +72,6 @@
 
 ## 快速上手
 
-> 所有需要修改的地方鱼皮都标记了 `todo`，便于大家找到修改的位置~
 
 ### MySQL 数据库
 
@@ -158,6 +157,5 @@ PUT post_v1
 找到 job 目录下的 `FullSyncPostToEs` 和 `IncSyncPostToEs` 文件，取消掉 `@Component` 注解的注释，再次执行程序即可触发同步：
 
 ```java
-// todo 取消注释开启任务
 //@Component
 ```

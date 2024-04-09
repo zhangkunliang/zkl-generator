@@ -16,7 +16,6 @@ import org.springframework.boot.CommandLineRunner;
  * @author <a href="https://github.com/zhangkunliang"></a>
  * 
  */
-// todo 取消注释开启任务
 //@Component
 @Slf4j
 public class FullSyncPostToEs implements CommandLineRunner {

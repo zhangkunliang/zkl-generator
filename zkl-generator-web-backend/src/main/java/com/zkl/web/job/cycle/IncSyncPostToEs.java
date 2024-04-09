@@ -17,7 +17,6 @@ import org.springframework.scheduling.annotation.Scheduled;
  * @author <a href="https://github.com/zhangkunliang"></a>
  * 
  */
-// todo 取消注释开启任务
 //@Component
 @Slf4j
 public class IncSyncPostToEs {
