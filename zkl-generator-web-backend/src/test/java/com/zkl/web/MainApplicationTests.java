@@ -1,6 +1,5 @@
 package com.zkl.web;
 
-import com.zkl.web.config.WxOpenConfig;
 import javax.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
